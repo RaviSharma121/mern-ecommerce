@@ -67,7 +67,7 @@ server.post('/webhook', express.raw({type: 'application/json'}), (request, respo
 
 const opts = {};
 opts.jwtFromRequest = cookieExtractor;
-opts.secretOrKey = process.env.JWT_SECRET_KEY; // TODO:should not be in code;
+opts.secretOrKey = process.env.JWT_SECRET_KEY; //TODO:should not be in code;
 
 //middlewares
 
